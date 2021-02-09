@@ -7,23 +7,17 @@
 # Inherit from miatoll  device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
-# Inherit some common Xtended stuff
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
-
-# Bootanimation Resolution
+# Inherit some common Hycon stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Official
-XTENDED_BUILD_TYPE := OFFICIAL
+TARGET_GAPPS_ARCH := arm64
+TARGET_USES_FACE_UNLOCK := true
 
 # Device identifier
-PRODUCT_NAME := xtended_miatoll
+PRODUCT_NAME := aosp_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Miatoll
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Maintainer
-XTENDED_MAINTAINER := 🔥SonalSingh18🔥
