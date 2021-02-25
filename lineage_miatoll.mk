@@ -8,13 +8,10 @@
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
 # Inherit some common Hycon stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-TARGET_USES_FACE_UNLOCK := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := aosp_miatoll
+PRODUCT_NAME := lineage_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Miatoll
